@@ -79,7 +79,7 @@ skillsEl.placeholder =
 ・コマンド（:HP+1）`;
 
 
-const dragEvent = {dragStart:dragStart, drop:drop};
+const dragEvent = new Map([['dragstart',dragStart], ['drop',drop]]);
 addRow(addParamsTable,2, 0, dragEvent, true);
 addRow(addStatsTable, 3, 0, dragEvent, true);
 
@@ -436,7 +436,7 @@ function createChatList() {
   }
 
   for (let i=0; i<chatList.length; i++) {
-    const row = addRow(chatTable, 3, -1, {dragStart:dragStart, drop:[drop,dropAdd]});
+    const row = addRow(chatTable, 3, -1, new Map([['dragstart',dragStart], ['drop',[drop,dropAdd]]]));
     const cell1 = row.children[0];
     const cell2 = row.children[1];
     const cell3 = row.children[2];
