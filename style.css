@@ -151,7 +151,7 @@ input[type="text"] {
   padding:0.25rem 0.5rem;
 }
 
-input [type="range"] {
+input[type="range"] {
   margin: 0;
   margin-inline-start: -2px;
 }
