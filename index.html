@@ -77,11 +77,12 @@
             <!-- 選択式設定 -->
             <div class="settingWrapper" style="margin-block-start: 0;">
               <span>システム</span>
-              <div class="toggle-button">
-                <label><input type="checkbox" id="system" /></label>
+              <label class="toggle-button">
+                <input type="checkbox" id="system" />
+                <span class="slider"></span>
                 <span class="not-checked">CoC6th</span>
                 <span class="checked">CoC7th</span>
-              </div>
+              </label>
 
               <span>判定ダイス</span>
               <select id="dice">
@@ -100,18 +101,20 @@
               <span></span>
               <div class="settingWrapper" style="margin: 0;column-gap: 0.5rem;">
                 <span style="padding-inline: 0.5rem;">単体ダイス</span>
-                <div class="toggle-button">
-                  <label><input type="checkbox" id="sDice" /></label>
+                <label class="toggle-button">
+                  <input type="checkbox" id="sDice" />
+                  <span class="slider"></span>
                   <span class="not-checked">オープン</span>
                   <span class="checked">シークレット</span>
-                </div>
+                </label>
 
                 <span style="padding-inline: 0.5rem;">choice</span>
-                <div class="toggle-button">
-                  <label><input type="checkbox" id="sChoice" /></label>
+                <label class="toggle-button">
+                  <input type="checkbox" id="sChoice" />
+                  <span class="slider"></span>
                   <span class="not-checked">オープン</span>
                   <span class="checked">シークレット</span>
-                </div>
+                </label>
               </div>
             </div>
           </div>
@@ -127,25 +130,28 @@
             </div>
 
             <span>ステータス</span>
-            <div class="toggle-button">
-              <label><input type="checkbox" id="secret" /></label>
+            <label class="toggle-button">
+              <input type="checkbox" id="secret" />
+              <span class="slider"></span>
               <span class="not-checked">公開</span>
               <span class="checked">秘匿</span>
-            </div>
+            </label>
 
             <span>発言アイコン</span>
-            <div class="toggle-button">
-              <label><input type="checkbox" id="invisible" /></label>
+            <label class="toggle-button">
+              <input type="checkbox" id="invisible" />
+              <span class="slider"></span>
               <span class="not-checked">表示</span>
               <span class="checked">非表示</span>
-            </div>
+            </label>
 
             <span>コマ一覧</span>
-            <div class="toggle-button">
-              <label><input type="checkbox" id="hideStatus" /></label>
+            <label class="toggle-button">
+              <input type="checkbox" id="hideStatus" />
+              <span class="slider"></span>
               <span class="not-checked">表示</span>
               <span class="checked">非表示</span>
-            </div>
+            </label>
           </div>
         </details>
 
@@ -471,29 +477,34 @@
           </table>
           <div class="settingWrapper" name="chatTarget">
             <span>差分</span>
-            <div class="toggle-button">
-              <label><input type="checkbox" value="diff" checked /></label>
-            </div>
+            <label class="toggle-button">
+              <input type="checkbox" value="diff" checked />
+              <span class="slider"></span>
+            </label>
 
             <span>SANc</span>
-            <div class="toggle-button">
-              <label><input type="checkbox" value="sanc" /></label>
-            </div>
+            <label class="toggle-button">
+              <input type="checkbox" value="sanc" />
+              <span class="slider"></span>
+            </label>
 
             <span>知識etc.</span>
-            <div class="toggle-button">
-              <label><input type="checkbox" value="ide" checked /></label>
-            </div>
+            <label class="toggle-button">
+              <input type="checkbox" value="ide" checked />
+              <span class="slider"></span>
+            </label>
 
             <span>技能</span>
-            <div class="toggle-button">
-              <label><input type="checkbox" value="skill" checked /></label>
-            </div>
+            <label class="toggle-button">
+              <input type="checkbox" value="skill" checked />
+              <span class="slider"></span>
+            </label>
 
             <span>ステ*5</span>
-            <div class="toggle-button">
-              <label><input type="checkbox" value="stats" checked /></label>
-            </div>
+            <label class="toggle-button">
+              <input type="checkbox" value="stats" checked />
+              <span class="slider"></span>
+            </label>
           </div>
         </div>
       </section>

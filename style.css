@@ -151,6 +151,11 @@ input[type="text"] {
   padding:0.25rem 0.5rem;
 }
 
+input [type="range"] {
+  margin: 0;
+  margin-inline-start: -2px;
+}
+
 input[type="number"] {
   width: 5ch;
   background-color: transparent;
@@ -287,11 +292,9 @@ div.buttonWrap {
   height: fit-content;
   margin-block: 0.25rem 0;
   margin-inline-start: -1rem;
-  div.toggle-button-1 {--checked-color: lightsalmon;}
+  .toggle-button {--color: lightsalmon;}
 
-  >div {
-    display: contents;
-  }
+  >div {display: contents;}
 
   @media (max-width:600px) {
     margin-inline-start: 0;
