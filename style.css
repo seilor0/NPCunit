@@ -68,7 +68,7 @@ hgroup {
 }
 
 p {
-  margin-block: 0.5rem;
+  margin-block: 0;
   font-weight: 500;
 }
 
@@ -347,7 +347,6 @@ span.title {
   color: rgba(0,0,0,0.6);
   font-size: smaller;
   text-align: end;
-  margin-block:0;
 }
 
 
@@ -391,11 +390,12 @@ span.title {
   background-color: #2a2a2a;
   border-radius: 3px;
   padding: 0.25rem 0.5rem;
-  margin-block: 0;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
   visibility: hidden;
 }
-input:focus + .ccfoliaName,
-input:focus + * + .ccfoliaName {
+:focus ~ .ccfoliaName {
   visibility: visible;
 }
 
